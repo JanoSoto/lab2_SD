@@ -3,6 +3,7 @@
 <head>
 	<title>Cliente PHP</title>
 	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<?php class Peticiones {
@@ -18,9 +19,8 @@
 				echo "<tr>\n";
 				echo "<td>".++$clave .".  $beer->name </td>"; 
 				echo "<td> $beer->description </td>";
-				echo "<td><a href=\"http://localhost:3000/beers/$beer->id\">Ver</a></td>";
-				echo "<td><a href=\"http://localhost:3000/beers/$beer->id/edit\">Editar</a></td>";
-				echo "<td><a data-confirm=\"¿Está seguro(a)?\" data-method=\"DELETE\" href=\"http://localhost:3000/beers/$beer->id\" >Eliminar</a></td>";	
+				echo "<td><a href=\"cliente_edit.php?id=$beer->id&nom=$beer->name&desc=$beer->description\">Editar</a></td>";
+				echo "<td><a class=\"btn btn-info\" href=\"cliente_delete.php?id=$beer->id\">Eliminar</a></td>";	
 				echo "</tr>";
 				//echo "<br><br><a href=\"localhost/otros_clientes/PHP/cliente.php\">Volver</a>";
 			}
@@ -46,13 +46,14 @@
 	}
 		
 	?>
-	
-	<?php
-		$peticiones = new Peticiones;
-		$peticiones->getAll();
-		echo "<br><br><br>";
-		echo "<a href=\"cliente_new.php\">Crear nuevo</a>";
-	?>
+	<div class="container">
+		<?php
+			$peticiones = new Peticiones;
+			$peticiones->getAll();
+			echo "<br><br><br>";
+			echo "<a href=\"cliente_new.php\">Crear nuevo</a>";
+		?>
+	</div>
 
 </body>
 </html>

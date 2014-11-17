@@ -4501,3 +4501,903 @@ Processing by BeersController#index as JSON
   [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
   Rendered beers/index.json.jbuilder (24.1ms)
 Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:24:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (15.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (0.9ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (77.5ms)
+Completed 200 OK in 328ms (Views: 144.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:32:35 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.6ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (21.8ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-11-16 21:32:57 -0300
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (1.6ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.html.erb within layouts/application (64.4ms)
+Completed 200 OK in 970ms (Views: 958.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-11-16 21:32:58 -0300
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2014-11-16 21:32:58 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-16 21:32:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 21:32:58 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-16 21:32:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 21:32:59 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 21:32:59 -0300
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-11-16 21:32:59 -0300
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2014-11-16 21:32:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 21:32:59 -0300
+
+
+Started GET "/beers/3/edit" for 127.0.0.1 at 2014-11-16 21:33:02 -0300
+Processing by BeersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBeer Load (15.2ms)[0m  [1mSELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1[0m
+  Rendered beers/_form.html.erb (176.7ms)
+  Rendered beers/edit.html.erb within layouts/application (224.6ms)
+Completed 200 OK in 755ms (Views: 727.4ms | ActiveRecord: 15.2ms)
+
+
+Started PUT "/beers" for 127.0.0.1 at 2014-11-16 21:40:47 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/beers"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.0ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.1ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.7ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:40:47 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.0ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (21.3ms)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/beers" for 127.0.0.1 at 2014-11-16 21:40:49 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/beers"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.6ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:40:50 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.4ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (32.4ms)
+Completed 200 OK in 61ms (Views: 57.3ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/beers" for 127.0.0.1 at 2014-11-16 21:43:18 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/beers"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.9ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.0ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:43:18 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (18.4ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/beers" for 127.0.0.1 at 2014-11-16 21:43:20 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/beers"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.7ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.8ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.0ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:43:20 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (18.6ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:43:52 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.7ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (24.5ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/beers" for 127.0.0.1 at 2014-11-16 21:43:54 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/beers"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.9ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.8ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.8ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:43:54 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (103.5ms)
+Completed 200 OK in 121ms (Views: 117.8ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/beers" for 127.0.0.1 at 2014-11-16 21:43:56 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/beers"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.3ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (114.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:43:56 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (21.4ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/beers" for 127.0.0.1 at 2014-11-16 21:44:29 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/beers"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.7ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.4ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.9ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:44:29 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (15.5ms)
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/beers" for 127.0.0.1 at 2014-11-16 21:44:48 -0300
+
+ActionController::RoutingError (No route matches [PUT] "/beers"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.8ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.4ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:44:48 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (19.6ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:48:30 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.8ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (20.0ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 1.8ms)
+
+
+Started PUT "/beers/$id" for 127.0.0.1 at 2014-11-16 21:48:41 -0300
+Processing by BeersController#update as HTML
+  Parameters: {"beer"=>{"name"=>"", "description"=>""}, "id"=>"$id"}
+Can't verify CSRF token authenticity
+  [1m[35mBeer Load (1.4ms)[0m  SELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 10ms
+
+ActiveRecord::RecordNotFound (Couldn't find Beer with 'id'=$id):
+  app/controllers/beers_controller.rb:67:in `set_beer'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (96.0ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:48:42 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.4ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (18.7ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/beers/3" for 127.0.0.1 at 2014-11-16 21:50:32 -0300
+Processing by BeersController#update as HTML
+  Parameters: {"beer"=>{"name"=>"", "description"=>""}, "id"=>"3"}
+Can't verify CSRF token authenticity
+  [1m[35mBeer Load (1.3ms)[0m  SELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.6ms)[0m  UPDATE `beers` SET `description` = '', `name` = '', `updated_at` = '2014-11-17 00:50:32' WHERE `beers`.`id` = 3
+  [1m[36m (112.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/beers/3
+Completed 302 Found in 155ms (ActiveRecord: 125.9ms)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2014-11-16 21:50:32 -0300
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBeer Load (1.2ms)[0m  SELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1
+  Rendered beers/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 535ms (Views: 527.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:50:33 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (19.6ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:50:39 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.4ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (24.2ms)
+Completed 200 OK in 60ms (Views: 52.1ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/beers/3" for 127.0.0.1 at 2014-11-16 21:51:45 -0300
+Processing by BeersController#update as HTML
+  Parameters: {"beer"=>{"name"=>"", "description"=>""}, "id"=>"3"}
+Can't verify CSRF token authenticity
+  [1m[36mBeer Load (1.5ms)[0m  [1mSELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/beers/3
+Completed 302 Found in 35ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2014-11-16 21:51:46 -0300
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBeer Load (1.3ms)[0m  SELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1
+  Rendered beers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 535ms (Views: 527.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:51:46 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.1ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (19.6ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/beers/3" for 127.0.0.1 at 2014-11-16 21:53:20 -0300
+Processing by BeersController#update as HTML
+  Parameters: {"beer"=>{"name"=>"", "description"=>""}, "id"=>"3"}
+Can't verify CSRF token authenticity
+  [1m[35mBeer Load (1.4ms)[0m  SELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1
+  [1m[36m (5.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (9.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/beers/3
+Completed 302 Found in 44ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2014-11-16 21:53:20 -0300
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1[0m
+  Rendered beers/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 560ms (Views: 552.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:53:21 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.0ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (18.0ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/beers/3" for 127.0.0.1 at 2014-11-16 21:55:08 -0300
+Processing by BeersController#update as HTML
+  Parameters: {"beer"=>{"name"=>"Escudo", "description"=>"Tiene mucha agua"}, "id"=>"3"}
+Can't verify CSRF token authenticity
+  [1m[36mBeer Load (2.3ms)[0m  [1mSELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE `beers` SET `description` = 'Tiene mucha agua', `name` = 'Escudo', `updated_at` = '2014-11-17 00:55:08' WHERE `beers`.`id` = 3[0m
+  [1m[35m (123.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/beers/3
+Completed 302 Found in 164ms (ActiveRecord: 128.0ms)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2014-11-16 21:55:08 -0300
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBeer Load (0.9ms)[0m  [1mSELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 3 LIMIT 1[0m
+  Rendered beers/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 519ms (Views: 512.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 21:55:09 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (0.9ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (17.6ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/beers/9" for 127.0.0.1 at 2014-11-16 22:00:12 -0300
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 9 LIMIT 1[0m
+  Rendered beers/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 533ms (Views: 522.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 22:00:13 -0300
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-11-16 22:00:16 -0300
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (1.5ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 488ms (Views: 483.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:00:24 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.7ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (28.6ms)
+Completed 200 OK in 55ms (Views: 50.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:00:50 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (30.2ms)
+Completed 200 OK in 59ms (Views: 48.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:00:50 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (25.6ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:00:51 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (29.5ms)
+Completed 200 OK in 52ms (Views: 47.2ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/beers/9" for 127.0.0.1 at 2014-11-16 22:00:56 -0300
+Processing by BeersController#destroy as HTML
+  Parameters: {"beer"=>{"name"=>"", "description"=>""}, "id"=>"9"}
+Can't verify CSRF token authenticity
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM `beers` WHERE `beers`.`id` = 9[0m
+  [1m[35m (83.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/beers
+Completed 302 Found in 107ms (ActiveRecord: 86.2ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-11-16 22:00:56 -0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 634ms (Views: 630.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:00:56 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.1ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (27.0ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:03:47 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.5ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (30.4ms)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:08:04 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.4ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (26.3ms)
+Completed 200 OK in 55ms (Views: 51.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:08:04 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.0ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (19.9ms)
+Completed 200 OK in 47ms (Views: 39.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:08:05 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.1ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (21.7ms)
+Completed 200 OK in 47ms (Views: 39.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-11-16 22:08:12 -0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 892ms (Views: 888.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 22:08:13 -0300
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:12:27 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (19.4ms)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:12:37 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (0.9ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (27.6ms)
+Completed 200 OK in 68ms (Views: 50.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:12:38 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.5ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (20.9ms)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:13:45 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.8ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (23.7ms)
+Completed 200 OK in 53ms (Views: 48.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:13:46 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (15.0ms)
+Completed 200 OK in 45ms (Views: 37.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:14:03 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.4ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (22.4ms)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:14:04 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (28.3ms)
+Completed 200 OK in 57ms (Views: 49.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:14:04 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (28.6ms)
+Completed 200 OK in 56ms (Views: 47.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:14:25 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.5ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (19.3ms)
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:14:37 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.4ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (21.2ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:14:42 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (33.0ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:15:23 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.1ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (16.1ms)
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:15:23 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (19.9ms)
+Completed 200 OK in 49ms (Views: 41.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:19:13 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.6ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (20.5ms)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:19:14 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (19.6ms)
+Completed 200 OK in 56ms (Views: 48.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:19:14 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (28.8ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:20:59 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (21.5ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:20:59 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.1ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (29.0ms)
+Completed 200 OK in 58ms (Views: 54.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:21:34 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (27.2ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:22:07 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (20.8ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:22:08 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (20.2ms)
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:22:08 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.5ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (23.5ms)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:22:09 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (26.1ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:22:09 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (19.1ms)
+Completed 200 OK in 42ms (Views: 35.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:29:00 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (17.1ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:29:54 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (17.1ms)
+Completed 200 OK in 55ms (Views: 42.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:30:07 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (26.3ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 22:31:04 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (19.4ms)
+Completed 200 OK in 63ms (Views: 52.8ms | ActiveRecord: 1.3ms)
