@@ -4026,3 +4026,478 @@ Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2014-11-15 16:25:12 -030
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 16:25:12 -0300
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:46:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.7ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (75.3ms)
+Completed 200 OK in 315ms (Views: 177.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:47:24 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.1ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (15.0ms)
+Completed 200 OK in 43ms (Views: 31.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:47:27 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.5ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (15.7ms)
+Completed 200 OK in 35ms (Views: 30.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:47:27 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.5ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (17.0ms)
+Completed 200 OK in 45ms (Views: 36.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:47:28 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (16.0ms)
+Completed 200 OK in 42ms (Views: 34.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:47:58 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.2ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (18.4ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:47:58 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.1ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (14.8ms)
+Completed 200 OK in 40ms (Views: 35.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:47:58 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (0.9ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (11.9ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:48:38 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.1ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (15.5ms)
+Completed 200 OK in 45ms (Views: 40.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-11-15 17:49:00 -0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 970ms (Views: 965.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 17:49:02 -0300
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:51:18 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (13.9ms)
+Completed 200 OK in 42ms (Views: 37.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:52:03 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.6ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (17.7ms)
+Completed 200 OK in 37ms (Views: 32.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:52:04 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.0ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (16.4ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:52:05 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (15.2ms)
+Completed 200 OK in 44ms (Views: 36.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:52:05 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.1ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (17.3ms)
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:54:49 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.1ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (19.0ms)
+Completed 200 OK in 46ms (Views: 41.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 17:56:18 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (17.0ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 18:00:23 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.1ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (18.6ms)
+Completed 200 OK in 48ms (Views: 37.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-15 18:04:31 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (25.9ms)
+Completed 200 OK in 54ms (Views: 49.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 13:01:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.1ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (78.6ms)
+Completed 200 OK in 310ms (Views: 163.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 13:01:52 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.1ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (47.5ms)
+Completed 200 OK in 68ms (Views: 64.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/beers" for 127.0.0.1 at 2014-11-16 13:06:03 -0300
+Processing by BeersController#create as HTML
+  Parameters: {"beer"=>{"name"=>"Royal", "description"=>"Piolein"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (35.9ms)[0m  [1mINSERT INTO `beers` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2014-11-16 16:06:04', 'Piolein', 'Royal', '2014-11-16 16:06:04')[0m
+  [1m[35m (189.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/beers/8
+Completed 302 Found in 303ms (ActiveRecord: 225.5ms)
+
+
+Started GET "/beers/8" for 127.0.0.1 at 2014-11-16 13:06:04 -0300
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBeer Load (1.1ms)[0m  [1mSELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 8 LIMIT 1[0m
+  Rendered beers/show.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 959ms (Views: 948.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/server.css?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/server.js?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-11-16 13:06:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:06:06 -0300
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 13:07:05 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.2ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (20.2ms)
+Completed 200 OK in 44ms (Views: 39.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 13:58:20 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (27.0ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/beers" for 127.0.0.1 at 2014-11-16 13:58:39 -0300
+Processing by BeersController#create as HTML
+  Parameters: {"name"=>"Austral", "description"=>"Buena y barata"}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 6ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: beer):
+  app/controllers/beers_controller.rb:72:in `beer_params'
+  app/controllers/beers_controller.rb:27:in `create'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.6ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.9ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (111.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 13:58:39 -0300
+Processing by BeersController#index as JSON
+  [1m[35mBeer Load (1.3ms)[0m  SELECT `beers`.* FROM `beers`
+  Rendered beers/index.json.jbuilder (19.4ms)
+Completed 200 OK in 41ms (Views: 36.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/beers" for 127.0.0.1 at 2014-11-16 14:02:22 -0300
+Processing by BeersController#create as HTML
+  Parameters: {"nombre"=>"hola", "descripcion"=>"hola"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 4ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.1) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.1) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.1) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.8ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (87.5ms)
+
+
+Started POST "/beers" for 127.0.0.1 at 2014-11-16 14:03:25 -0300
+Processing by BeersController#create as HTML
+  Parameters: {"nombre"=>"hola", "descripcion"=>"hola"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 11ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.1) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.1) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.1) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (85.9ms)
+
+
+Started POST "/beers" for 127.0.0.1 at 2014-11-16 14:04:22 -0300
+Processing by BeersController#create as HTML
+  Parameters: {"nombre"=>"Austral", "descripcion"=>"Buena y barata"}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 10ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: beer):
+  app/controllers/beers_controller.rb:72:in `beer_params'
+  app/controllers/beers_controller.rb:27:in `create'
+
+
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.6ms)
+  Rendered /home/jano/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (85.5ms)
+
+
+Started POST "/beers" for 127.0.0.1 at 2014-11-16 14:05:43 -0300
+Processing by BeersController#create as HTML
+  Parameters: {"beer"=>{"name"=>"Austral", "description"=>"Buena y barata"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO `beers` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2014-11-16 17:05:43', 'Buena y barata', 'Austral', '2014-11-16 17:05:43')
+  [1m[36m (136.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/beers/9
+Completed 302 Found in 219ms (ActiveRecord: 144.5ms)
+
+
+Started GET "/beers/9" for 127.0.0.1 at 2014-11-16 14:05:43 -0300
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mBeer Load (1.2ms)[0m  SELECT  `beers`.* FROM `beers`  WHERE `beers`.`id` = 9 LIMIT 1
+  Rendered beers/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 621ms (Views: 613.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beers.json" for 127.0.0.1 at 2014-11-16 14:05:44 -0300
+Processing by BeersController#index as JSON
+  [1m[36mBeer Load (1.3ms)[0m  [1mSELECT `beers`.* FROM `beers`[0m
+  Rendered beers/index.json.jbuilder (24.1ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 1.3ms)
